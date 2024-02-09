@@ -32,11 +32,10 @@ class  MainScreenWindow(QWidget, Ui_mainScreenWindow):
     def onButton2Clicked(self):
         
         if not hasattr(self,"autoOfflinePage"):
-            print("asdf")
             self.autoOfflinePage = AutoOfflineWindow()
             self.parent().addWidget(self.autoOfflinePage)
         
-        self.parent().setCurrentWidget(self.autoOfflinePage)    
+        self.parent().setCurrentWidget(self.autoOfflinePage)
         print(self.parent().count())
         print("button2 clicked")
     def onButton3Clicked(self):
@@ -48,6 +47,8 @@ class  MainScreenWindow(QWidget, Ui_mainScreenWindow):
     def onButton6Clicked(self):
         pass
 
+
+    
     def resizeEvent(self, event: QResizeEvent) -> None:
         self.layoutWidget.setGeometry(QRect(0, 0, self.width(), self.height()))
         return super().resizeEvent(event)
