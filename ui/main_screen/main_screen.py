@@ -27,7 +27,6 @@ class  MainScreenWindow(QWidget, Ui_mainScreenWindow):
             self.parent().addWidget(self.logScreenPage)
         
         self.parent().setCurrentWidget(self.logScreenPage)
-
         
     def onButton2Clicked(self):
         
@@ -35,8 +34,13 @@ class  MainScreenWindow(QWidget, Ui_mainScreenWindow):
             self.autoOfflinePage = AutoOfflineWindow()
             self.parent().addWidget(self.autoOfflinePage)
         
-        self.parent().setCurrentWidget(self.autoOfflinePage)
-        print(self.parent().count())
+        if self.autoOfflinePage.callDialog() == 1:
+            self.parent().setCurrentWidget(self.autoOfflinePage)
+        else:
+            self.parent().setCurrentIndex(0)
+
+        
+        #print(self.parent().count())
         print("button2 clicked")
     def onButton3Clicked(self):
         print("button3 clicked")
