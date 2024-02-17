@@ -35,6 +35,12 @@
      <property name="spacing">
       <number>10</number>
      </property>
+     <property name="leftMargin">
+      <number>20</number>
+     </property>
+     <property name="rightMargin">
+      <number>20</number>
+     </property>
      <item>
       <widget class="QPushButton" name="backToMainScreenButton">
        <property name="text">

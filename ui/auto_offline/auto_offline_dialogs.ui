@@ -39,11 +39,17 @@
       <property name="spacing">
        <number>10</number>
       </property>
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="rightMargin">
+       <number>20</number>
+      </property>
       <property name="bottomMargin">
        <number>20</number>
       </property>
       <item>
-       <widget class="QPushButton" name="pushButton_3">
+       <widget class="QPushButton" name="backToMainScreenButton">
         <property name="text">
          <string>Ana Menüye Dön</string>
         </property>
@@ -66,14 +72,14 @@
        </spacer>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="backButton">
         <property name="text">
          <string>Geri</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="nextButton">
         <property name="text">
          <string>İleri</string>
         </property>
@@ -117,9 +123,9 @@
   </widget>
  </widget>
  <tabstops>
-  <tabstop>pushButton_3</tabstop>
-  <tabstop>pushButton_2</tabstop>
-  <tabstop>pushButton</tabstop>
+  <tabstop>backToMainScreenButton</tabstop>
+  <tabstop>backButton</tabstop>
+  <tabstop>nextButton</tabstop>
  </tabstops>
  <resources/>
  <connections/>
