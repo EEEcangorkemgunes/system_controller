@@ -50,7 +50,7 @@ class AutoOfflineDialogs(QDialog, Ui_Dialog):
 
     def backToMainScreen(self):
         self.reject()
-        pass'''
+        pass
 
     def resizeEvent(self, arg__1: QResizeEvent) -> None:
         self.stackedWidget.setGeometry(QRect(0, 0, self.width(), self.height()))
@@ -58,4 +58,4 @@ class AutoOfflineDialogs(QDialog, Ui_Dialog):
         self.verticalLayoutWidget.setGeometry(QRect(0, 0, self.width(), 120))
         self.widget.setGeometry(QRect(0, 120, self.width(), self.height() - 200))
         self.horizontalLayoutWidget.setGeometry(QRect(0, self.height() - 80, self.width(), 80))
-        return super().resizeEvent(arg__1)
+        return super().resizeEvent(arg__1)'''
